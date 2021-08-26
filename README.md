@@ -1,1 +1,2 @@
-# alx-low_level_programming, about c language
+# alx-low_level_programming
+about c language
