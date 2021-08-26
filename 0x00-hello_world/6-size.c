@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-*main - starts the c programs
-*void - return value of main
-*return:0 - returns 0 on exiting the program
-*/
+ *main - Entry point, primary function that must be at the beginning of the program
+ *Return:0 - Always 0 (Success), on reaching the end the program should return 0
+ *void: - argument for main function.
+ */
 
 int main(void)
 {

@@ -2,10 +2,11 @@
 #include <string.h>
 
 /**
- * main - starts a file
- * void: - argument for main function
- * return:0 - ends the program with 0
-*/
+ *main - Entry point, primary function that must be at the beginning of the program
+ *Return:0 - Always 0 (Success), on reaching the end the program should return 0
+ *void: - argument for main function.
+ */
+
 
 int main(void)
 {
