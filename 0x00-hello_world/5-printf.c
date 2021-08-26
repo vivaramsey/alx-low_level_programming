@@ -2,8 +2,8 @@
 #include <string.h>
 
 /**
- *main - Entry point, primary function that must be at the beginning of the program
- *Return:0 - Always 0 (Success), on reaching the end the program should return 0
+ *main - Entry point,
+ *Return:0 - Always 0 (Success)
  *void: - argument for main function.
  */
 
