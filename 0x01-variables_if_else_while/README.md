@@ -1,1 +1,2 @@
-#varaibles of C if,else,while
+Variables, if, else, while
+of ***C***
