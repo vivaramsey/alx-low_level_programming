@@ -1,21 +1,22 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main -entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int z;
+	char c;
+	char alpha;
 
-for (z = 48; z <= 57; z++)
-{
-putchar(z);
-}
-for (z = 97; z <= 102;z++)
-{
-putchar(z)
-}
-putchar('\n');
-return (0);
+	for (c = '0'; c <= '9'; c++)
+	{
+	putchar(c);
+	}
+	for (alpha = 'a'; alpha <= 'f'; alpha++)
+	{
+	putchar(alpha);
+	}
+	putchar(10);
+	return (0);
 }

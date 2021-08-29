@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main -entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int k;
+	int num;
 
-for (k = 48; k <= 57; k++)
-{
-putchar(k);
-}
-putchar('\n');
-return (0);
+	for (num = 48; num <= 57; num++)
+	{
+	putchar(num);
+	}
+	putchar(10);
+	return (0);
 }

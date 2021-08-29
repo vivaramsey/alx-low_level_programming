@@ -1,28 +1,22 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main -entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int x, y;
+	int l_alpha;
+	int U_alpha;
 
-<<<<<<< HEAD
-for (m = 97; m <= 122; m++)
-putchar(m);
-for (n = 65; n <= 90; n++)
-putchar(n);
-=======
-for (x = 97; x<= 122; x++)
-{
-putchar(x);
-}
-for (y = 65; y <= 90; y++)
-{
-putchar(y);
-}
->>>>>>> c38d008b18676f16774155151031a0fcc1c46752
-putchar('\n');
-return (0);
+	for (l_alpha = 97; l_alpha <= 122; l_alpha++)
+	{
+	putchar(l_alpha);
+	}
+	for (U_alpha = 65; U_alpha <= 90; U_alpha++)
+	{
+	putchar(U_alpha);
+	}
+	putchar(10);
+	return (0);
 }

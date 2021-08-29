@@ -1,27 +1,25 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main -entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int y;
+	int l_alpha;
 
-for (y = 97; y <= 122; y++)
-{
-<<<<<<< HEAD
-       if (m == 101 || m == 113)
-=======
-if (y == 101 || y == 113)
->>>>>>> c38d008b18676f16774155151031a0fcc1c46752
-{
-}
-else
-{
-putchar(y);
-}
-}
-putchar('\n');
-return (0);
+	for (l_alpha = 97; l_alpha <= 122; l_alpha++)
+	{
+	if (l_alpha == 101)
+	{
+	l_alpha++;
+	}
+	else if (l_alpha == 113)
+	{
+	l_alpha++;
+	}
+	putchar(l_alpha);
+	}
+	putchar(10);
+	return (0);
 }
