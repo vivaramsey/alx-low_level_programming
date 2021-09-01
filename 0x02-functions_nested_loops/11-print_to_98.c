@@ -1,75 +1,46 @@
 #include "main.h"
-void cm_spc(int n);
-void prnt_dgt(int n);
-
+#include <stdio.h>
 /**
- * print_to_98 - print numbers starting from n
- * @n: start point to count
+ *print_to_98 - natural numbers from n to 98.
+ *@n: input.
+ *
+ *Return: void.
+ *
  */
-
 void print_to_98(int n)
 {
-	int x;
-
-	for ( ; n > 98; n--)
-	{
-		if (n > 99)
-		{
-			_putchar((n / 100) + 48);
-			_putchar(((n / 10) % 10) + 48);
-			_putchar((n % 10) + 48);
-		}
-		else
-			prnt_dgt(n);
-		cm_spc(n);
-	}
-
-	for (; n <= 98; n++)
-	{
-		if (n < 0)
-		{
-			x = n * -1;
-			_putchar('-');
-			if (x > 9)
-				prnt_dgt(x);
-			else
-				_putchar((x % 10) + 48);
-			cm_spc(n);
-		}
-		if (n >= 0)
-		{
-			if (n < 10)
-				_putchar((n % 10) + 48);
-			else
-				prnt_dgt(n);
-			cm_spc(n);
-		}
-	}
-	_putchar(10);
-}
-
-/**
- * cm_spc - prints comma and space
- * @n: continues to print before last value of n
- */
-
-void cm_spc(int n)
+if (n == 98)
 {
-	if (n != 98)
-	{
-		_putchar(44);
-		_putchar(32);
-	}
-
+printf("%d\n", n);
 }
-
-/**
- * prnt_dgt - prints individual digits to output
- * @n: value to be printed
- */
-
-void prnt_dgt(int n)
+else if (n < 98)
 {
-	_putchar((n / 10) + 48);
-	_putchar((n % 10) + 48);
+int j;
+for (j = n; j < 99; j++)
+{
+if (j == 98)
+{
+printf("%d\n", 98);
+}
+else
+{
+printf("%d, ", j);
+}
+}
+}
+else if (n > 98)
+{
+int j;
+for (j = n; j > 97; j--)
+{
+if (j == 98)
+{
+printf("%d\n", j);
+}
+else
+{
+printf("%d, ", j);
+}
+}
+}
 }
