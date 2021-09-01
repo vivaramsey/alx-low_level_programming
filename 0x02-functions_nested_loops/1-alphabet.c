@@ -1,21 +1,24 @@
-#include "holberton.h"
+#include"holberton.h"
 
 /**
- * print_alphabet - check the code for Holberton School students.
+ * print_alphabet - utilizes on the _putchar function to print
+ *                 the alphabet a - z
  *
- * Return: Always 0.
- */
+ * Description: prototype function called print_alphabet
+ *
+ *
+ * Return: return 1 on success
+*/
 
 void print_alphabet(void)
 {
-	char alp = 'a';
+	char ch;
 
-	while (alp <= 'z')
+	/*print a -z*/
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		_putchar (alp);
-		alp++;
-
+		_putchar(ch);
 	}
-	_putchar ('\n');
 
+	_putchar('\n');
 }
