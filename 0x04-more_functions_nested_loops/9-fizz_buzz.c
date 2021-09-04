@@ -1,57 +1,34 @@
-#include <studio.h>
-int chk_x(int x);
+#include <stdio.h>
 
 /**
- * main - checks numbers of multiple of 3 and 5
- *
- * Return: on success 0
+ * main - prints Buzz each numbers of 3 and 5.
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int x = 1, y;
+	int n;
 
-	for (; x <= 100;)
+	n = 1;
+	printf("%d", n);
+	for (n = 2; n <= 100; n++)
 	{
-		y = chk_x(x);
-		if (y == 0)
-			printf("%d ", x);
-		x++;
-	}
-	return (0);
-}
-
-/**
- * chk_x - checks numbers
- * @x: numbers to check for if divisible by 3 1n3 5
- * Return: 1 on true and 0 on false
- */
-
-int chk_x(int x)
-{
-	int y = 0;
-
-	if (x % 15 == 0)
-	{
-		printf("FizzBuzz ");
-		y = 1;
-	}
-	else if (x % 3 == 0)
-	{
-		printf("Fizz ");
-		y = 1;
-	}
-	else if (x % 5 == 0)
-	{
-		if (x == 100)
-			printf("Buzz\n");
+		if ((n % 3 == 0) && (n % 5 == 0))
+		{
+			printf(" FizzBuzz");
+		}
+		else if (n % 3 == 0)
+		{
+			printf(" Fizz");
+		}
+		else if (n % 5 == 0)
+		{
+			printf(" Buzz");
+		}
 		else
-			printf("Buzz ");
-		y = 1;
+		{
+			printf(" %d", n);
+		}
 	}
-	else
-		x = x;
-	if (y == 1)
-		return (1);
+	printf("\n");
 	return (0);
 }

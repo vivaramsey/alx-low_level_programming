@@ -1,1 +1,1 @@
-##more about c functions and nested loops.
+##More about functions and loops

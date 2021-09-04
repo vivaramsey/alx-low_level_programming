@@ -1,31 +1,23 @@
 #include "main.h"
 
 /**
- * print_diagonal - print stroke
- * @n: number of space end with stroke
+ * print_diagonal - prints diagonal line n times.
+ * @n: times diagonal line is printed.
+ * Return: no return.
  */
-
 void print_diagonal(int n)
 {
-	int i = 0;
+	int i, j;
 
-	if (n <= 0)
+	for (i = 0; i < n; i++)
 	{
-		_putchar(10);
-		return;
-	}
-
-	while (i <= n)
-	{
-		if (i > 0)
+		for (j = 0; j < i; j++)
 		{
-			int x = 1;
-
-			for (; x < i; x++)
-				_putchar(32);
-			_putchar(92);
-			_putchar(10);
+			_putchar(' ');
 		}
-		i++;
+		_putchar(92);
+		if (i < (n - 1))
+			_putchar('\n');
 	}
+	_putchar('\n');
 }
